@@ -6,8 +6,8 @@ USER root
 RUN groupadd --gid 1001 node \
   && useradd --uid 1001 --gid node --shell /bin/bash --create-home node
 
-ENV NODE_VERSION=8.11.2 \
-  YARN_VERSION=1.7.0 \
+ENV NODE_VERSION=8.16.2 \
+  YARN_VERSION=1.19.1 \
   ARCH=x64
 
 RUN apt-get update && apt-get install xz-utils
